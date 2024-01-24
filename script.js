@@ -1,13 +1,13 @@
 function showTime() {
 	const date = new Date();
 
-	let today = date.toLocaleString("en", { weekday: "long" });
+	let today = date.toLocaleString("de", { weekday: "long" });
 	let hour = date.toLocaleString("pl", { hour: "2-digit" }); // use 24h time format
-	let minute = date.toLocaleString("en", { minute: "2-digit" });
-	let second = date.toLocaleString("en", { second: "2-digit" });
-	let day = date.toLocaleString("en", { day: "2-digit" });
-	let month = date.toLocaleString("en", { month: "2-digit" });
-	let year = date.toLocaleString("en", { year: "numeric" });
+	let minute = date.toLocaleString("de", { minute: "2-digit" });
+	let second = date.toLocaleString("de", { second: "2-digit" });
+	let day = date.toLocaleString("de", { day: "2-digit" });
+	let month = date.toLocaleString("de", { month: "2-digit" });
+	let year = date.toLocaleString("de", { year: "numeric" });
 
 	minute = addZero(minute);
 	second = addZero(second);
